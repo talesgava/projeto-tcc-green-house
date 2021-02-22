@@ -1,0 +1,7 @@
+{
+  "name": "mobileTcc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

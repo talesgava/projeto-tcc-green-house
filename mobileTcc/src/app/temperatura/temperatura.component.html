@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Temperatura
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Sensor de temperatura</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart class="chart" [data]="temperaturaChart"></google-chart>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Média Diária (últimas 24hrs):</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1 class="Diaria">{{somadia}}</h1>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Média Semanal (últimos 5 dias):</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1 class="Semanal">{{soma}}</h1>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

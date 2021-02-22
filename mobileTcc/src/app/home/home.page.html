@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Página principal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Sensor de luminosidade</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart class="chart" [data]="luminosidade"></google-chart>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Sensor de temperatura</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart class="chart" [data]="temperatura"></google-chart>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Sensor de umidade do ar</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart class="chart" [data]="umidadeAr"></google-chart>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Sensor de umidade do solo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart class="chart" [data]="umidadeSolo"></google-chart>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
